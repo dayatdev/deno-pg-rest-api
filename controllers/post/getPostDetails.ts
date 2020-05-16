@@ -1,6 +1,6 @@
 import { RouterContext } from "https://deno.land/x/oak/mod.ts";
 
-import { getPost, deletePost } from "../services/postService.ts";
+import { getPost } from "../../services/postService.ts";
 
 export default async ({
   params,
@@ -22,6 +22,5 @@ export default async ({
     return;
   }
 
-  await deletePost(postId);
-  response.body = { msg: "Post deleted" };
+  response.body = foundPost;
 };

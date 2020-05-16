@@ -1,7 +1,7 @@
 import { RouterContext } from "https://deno.land/x/oak/mod.ts";
 
-import { IPost } from "../interface/post.ts";
-import { updatePost } from "../services/postService.ts";
+import { IPost } from "../../interface/post.ts";
+import { updatePost } from "../../services/postService.ts";
 
 export default async (
   { params, request, response }: RouterContext,

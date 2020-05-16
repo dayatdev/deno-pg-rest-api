@@ -1,7 +1,7 @@
 import { Context } from "https://deno.land/x/oak/mod.ts";
 
-import { IPost } from "../interface/post.ts";
-import { createPost } from "../services/postService.ts";
+import { IPost } from "../../interface/post.ts";
+import { createPost } from "../../services/postService.ts";
 
 export default async ({ request, response }: Context) => {
   if (!request.hasBody) {
